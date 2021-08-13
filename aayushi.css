@@ -1,0 +1,200 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display:flex ;
+    align-items: center;
+
+}
+
+#navbar::before{
+    content: "";
+    background: url(wood.bg.1.jpg)  no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1 ;
+    opacity: 0.89;
+    border: 2px solid black;
+}
+
+/* Navigation Bar Logo amd Image */
+#logo{
+  
+    margin: 10px 34px;
+
+}
+#logo img{
+    border-radius: 100%;
+    height: 259px;
+    margin: 3px 6px;
+
+}
+/* Navigation Bar List Styling */
+
+#navbar{
+    position: relative;
+}
+
+ #navbar ul{
+    display: flex;
+    
+}
+
+
+#navbar ul li{
+    
+   list-style: none;
+   font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+   display: block;
+   padding: 3px 22px;
+   margin: 26px;
+   border-radius: 20px;
+   text-decoration: none;
+   background-color: rgb(0, 0, 0);
+ }
+
+ #navbar ul li a:hover{
+    background-color: rgb(136, 132, 132);
+   color: white;
+ }
+
+ /* Home Section */
+
+ #home{
+     display: flex;
+     flex-direction: column;
+     padding: 3px 200px;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #home::before{
+    content: "";    
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: -1 ;
+    opacity: 0.89;
+
+    
+    
+}
+#home h1{
+    
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#home p{
+    
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#home::before{
+    content: "";
+    background: url(home.jpg)  no-repeat center center/cover;
+    position: absolute;
+    height: 56%;
+    width: 100%;
+    z-index: -1 ;
+    opacity: 0.5;
+    margin: 0px;
+}
+/* Utility Class */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: cadetblue;
+    color: white;
+    margin: 17px ;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* Services Section  */
+
+.center{
+    text-align: center;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid black;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: rgb(233, 184, 184);
+}
+
+#services .box img{
+   height: 160px;
+   display: block;
+   margin: auto;
+   border-radius: 100%;
+}
+/* Contact-section  */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 600%;
+    z-index: -1;
+       opacity: 0.4;
+    background: url(contact.jpg) no-repeat center center/cover;
+}
+footer{
+    background: black;
+    color: white;
+    padding: ;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+border-radius: 9px;
+font-size: 1.3rem;
+
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
